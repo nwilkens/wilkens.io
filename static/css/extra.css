@@ -3,5 +3,5 @@
 .prose table { display: block; overflow-x: auto; font-size: 0.9rem; }
 .prose th { white-space: nowrap; }
 .prose figure { margin: 2.5rem 0; }
-.prose figure img { width: 100%; height: auto; border: 1px solid hsl(var(--border)); border-radius: 0.5rem; margin: 0; }
+.prose figure img, .prose figure video { width: 100%; height: auto; border: 1px solid hsl(var(--border)); border-radius: 0.5rem; margin: 0; }
 .prose figcaption { color: hsl(var(--muted-foreground)); font-size: 0.875rem; line-height: 1.6; margin-top: 0.75rem; }

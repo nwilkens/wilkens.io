@@ -6,7 +6,8 @@ tags: ["Astronomy", "Near-Earth Asteroids", "Asteroid Pairs", "Open Data", "NASA
 ---
 
 Two near-Earth asteroids, 2018 NC15 and 2026 LD1, are on almost the same
-orbit and are currently about 320,000 km apart, which is less than the
+orbit. When they passed Earth in June 2026 they were about 500,000 km apart.
+As of November 2026 the gap is about 310,000 km, which is less than the
 distance from the Earth to the Moon. I could not find any publication that
 links them. This article describes how the pair turned up, the checks I ran,
 and the limits of what the data can show today.
@@ -26,6 +27,13 @@ This is a candidate, not a confirmed result. It has not been peer reviewed.
   diameter of 2018 NC15.
 - The date they separated cannot be determined yet. The short arc of
   2026 LD1 leaves its past position too uncertain.
+
+## The June 2026 pass
+
+<figure>
+<video controls muted loop playsinline preload="metadata" poster="flyby-2026-poster.png" src="flyby-2026.mp4"></video>
+<figcaption>April to August 2026, from JPL Horizons positions. Left: the shared orbit seen from above the Solar System; at this scale the two asteroids are a single dot. Right: where 2026 LD1 appeared in the sky relative to 2018 NC15, with north up and east to the left. The rings mark the two nights when the Catalina Sky Survey recorded both. The pair came no closer to Earth than 19.7 million km.</figcaption>
+</figure>
 
 ## What an asteroid pair is
 
@@ -85,8 +93,10 @@ time on 5 June 2026 and again on 21 June 2026.
 | 2026-06-21 06:27 | 1.27° | 19.3 | 20.8 |
 
 **They are close together in space.** JPL's integrated orbits put the two
-about 320,000 km apart at their closest in 2026. The position of 2026 LD1 is
-uncertain by roughly 50,000 km.
+about 500,000 km apart during the June 2026 pass. The gap changes as they go
+around the orbit, between 265,000 and 520,000 km over 2026. The position of
+2026 LD1 is uncertain by roughly 50,000 km. On the nominal orbits the gap has
+been closing: it was 1.5 to 2.0 million km in 2018.
 
 **Only the timing differs clearly.** Taken one at a time, each orbital element
 of 2026 LD1 agrees with 2018 NC15 to within 0.4 standard deviations. The
@@ -132,6 +142,11 @@ record, about two degrees from 2018 NC15.
 | 2024-06-03 | 20.9 | 2.4° | 10° |
 | 2024-06-18 | 20.3 | 2.2° | 9° |
 | 2024-07-03 | 20.8 | 1.5° | 6° |
+
+<figure>
+<img src="brightness.png" alt="Line chart of predicted apparent magnitude for 2018 NC15 and 2026 LD1 from 2018 to 2026. Both brighten every two years. 2026 LD1 reaches magnitude 20.2 in June 2024, brighter than the approximate survey limit of 21.5, and was not detected then. Tick marks show the nights each object was observed.">
+<figcaption>Predicted brightness of both asteroids at each return. 2026 LD1 was above the approximate survey limit only in 2024 and 2026. The tick marks along the bottom show the nights each object was actually observed.</figcaption>
+</figure>
 
 The uncertainty runs along the orbit track, so the search area is a line
 rather than a circle. One detection in archived Pan-STARRS or Catalina images

@@ -13,3 +13,5 @@ Requires Python 3.12 with `numpy`, `pandas`, `scipy`, `matplotlib`, and `rebound
 | `same_night_obs.py` | Minor Planet Center `get-obs` JSON | Same-station, same-night observations |
 | `clones.py` | Horizons states and SBDB covariance | Backward integration of orbit clones |
 | `fig_clones.py` | Output of `clones.py` | Figure in the article |
+| `fig_flyby.py` | Horizons vectors and observer tables, 6-hour step | Animation of the 2026 pass |
+| `fig_brightness.py` | Horizons observer table, MPC observations | Brightness chart |
