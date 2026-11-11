@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{- $section := .Parent }}
+<div class="fixed top-0 left-0 right-0 h-0.5 z-50 bg-transparent"><div id="reading-progress" class="h-full bg-primary transition-[width] duration-150 ease-out" style="width:0%"></div></div>
+<article class="animate-in fade-in duration-700">
+  <header class="max-w-3xl mx-auto px-6 pt-12 pb-10">
+    <a href="{{ $section.RelPermalink }}" class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground font-mono transition-colors mb-10">{{ partial "icon.html" (dict "name" "arrow-left" "class" "w-4 h-4") }} cd ..</a>
+    <div class="space-y-6">
+      <div class="flex flex-wrap items-center gap-3 text-sm font-mono text-muted-foreground"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="text-primary">{{ .Date.Format "January 2, 2006" }}</time><span class="text-border">/</span><span class="flex items-center gap-1.5">{{ partial "icon.html" (dict "name" "clock" "class" "w-3.5 h-3.5") }}{{ partial "reading-time.html" . }} min read</span></div>
+      <h1 class="text-4xl md:text-[3.25rem] font-bold tracking-tight leading-[1.1] text-balance">{{ .Title }}</h1>
+      <p class="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">{{ .Description }}</p>
+    </div>
+  </header>
+  <div class="max-w-3xl mx-auto px-6"><div class="border-t border-border"></div></div>
+  <div class="max-w-[42rem] mx-auto px-6 py-12">
+    <div class="prose prose-invert max-w-none
+              prose-p:text-[1.0625rem] prose-p:leading-[1.85] prose-p:text-foreground/85 prose-p:my-6
+              prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-foreground
+              prose-h2:text-[1.6rem] prose-h2:mt-14 prose-h2:mb-5 prose-h2:leading-snug
+              prose-h2:pb-3 prose-h2:border-b prose-h2:border-border/60
+              prose-h3:text-[1.25rem] prose-h3:mt-10 prose-h3:mb-4
+              prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-a:underline-offset-4
+              prose-strong:text-foreground prose-strong:font-semibold
+              prose-em:text-foreground/90
+              prose-code:text-primary prose-code:bg-primary/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[0.9em] prose-code:font-normal prose-code:before:content-none prose-code:after:content-none
+              prose-pre:bg-[#0a0a0a] prose-pre:border prose-pre:border-border prose-pre:rounded-lg prose-pre:text-sm prose-pre:leading-relaxed
+              prose-ul:my-6 prose-ol:my-6
+              prose-li:text-[1.0625rem] prose-li:leading-[1.75] prose-li:text-foreground/85 prose-li:my-2.5 prose-li:marker:text-primary/60
+              prose-blockquote:border-l-2 prose-blockquote:border-l-primary prose-blockquote:bg-muted/20 prose-blockquote:py-2 prose-blockquote:px-5 prose-blockquote:rounded-r prose-blockquote:text-foreground/80 prose-blockquote:not-italic
+              prose-hr:border-border prose-hr:my-12">{{ .Content }}</div>
+    <footer class="mt-16 pt-8 border-t border-border space-y-8">
+      <div class="flex flex-wrap gap-2">{{ range .Params.tags }}<span class="px-2.5 py-1 text-xs font-mono bg-muted text-muted-foreground rounded border border-border">#{{ . }}</span>{{ end }}</div>
+      <div class="flex items-center justify-between"><a href="{{ $section.RelPermalink }}" class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground font-mono transition-colors">{{ partial "icon.html" (dict "name" "arrow-left" "class" "w-4 h-4") }} {{ $section.Params.backLabel | default "Back" }}</a><span class="text-sm font-mono text-muted-foreground">{{ site.Params.author }}</span></div>
+    </footer>
+  </div>
+</article>
+{{ end }}

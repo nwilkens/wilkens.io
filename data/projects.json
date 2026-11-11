@@ -1,0 +1,94 @@
+[
+ {
+  "id": 1,
+  "name": "Triton DataCenter",
+  "description": "Open-source cloud orchestration platform acquired from Samsung, spanning virtualization, distributed storage, networking, and container management.",
+  "longDescription": "Triton DataCenter is a complete software stack for operating a cloud infrastructure. After acquiring the platform from Samsung (originally part of the $170M Joyent acquisition), Nick led engineering, enterprise support, and open-source stewardship. The platform powers multi-datacenter deployments with bhyve/KVM virtualization, software-defined networking, and distributed object storage.",
+  "url": "https://github.com/TritonDataCenter",
+  "githubUrl": "https://github.com/TritonDataCenter/triton",
+  "tags": [
+   "Rust",
+   "Go",
+   "SmartOS",
+   "Kubernetes",
+   "Distributed Systems",
+   "Open Source"
+  ],
+  "featured": true,
+  "order": 1
+ },
+ {
+  "id": 2,
+  "name": "SmartOS / illumos",
+  "description": "One of the maintainers of the SmartOS operating system and the illumos open-source project — the foundation for the Triton cloud platform.",
+  "longDescription": "SmartOS is a specialized illumos-based operating system designed for running cloud workloads. Nick works alongside the community as one of the maintainers, contributing to release engineering, build infrastructure, and project governance for the downstream illumos ecosystem.",
+  "url": "https://smartos.org",
+  "githubUrl": "https://github.com/TritonDataCenter/smartos-live",
+  "tags": [
+   "C",
+   "illumos",
+   "Operating Systems",
+   "Virtualization",
+   "Open Source"
+  ],
+  "featured": true,
+  "order": 2
+ },
+ {
+  "id": 3,
+  "name": "AI-Native Engineering Platform",
+  "description": "Production AI platform integrating Claude Code, local LLMs, and OpenAI into daily engineering workflows at Edgecast Cloud (Sovren Technologies).",
+  "longDescription": "Designed and deployed an AI-native software engineering platform used across engineering organizations. The platform integrates Claude Code, locally hosted LLMs, and OpenAI APIs into development workflows spanning architecture generation, code review, documentation, testing, and deployment validation. Includes retrieval-augmented engineering knowledge systems indexing source code, RFCs, runbooks, and architecture documents.",
+  "url": null,
+  "githubUrl": null,
+  "tags": [
+   "Python",
+   "Rust",
+   "Claude",
+   "OpenAI",
+   "RAG",
+   "MCP",
+   "AI",
+   "LLM",
+   "Agentic Systems"
+  ],
+  "featured": true,
+  "order": 3
+ },
+ {
+  "id": 4,
+  "name": "MNX.io Cloud Platform",
+  "description": "Public cloud platform built from scratch and operated in production for over a decade — orchestration, provisioning, billing, identity, and automation.",
+  "longDescription": "Architected and implemented the software powering the MNX.io public cloud. Built the full stack: orchestration engine, VM provisioning, billing system, identity and access management, and 24/7 managed operations automation. Ran in production for 10+ years before the Edgecast acquisition.",
+  "url": null,
+  "githubUrl": null,
+  "tags": [
+   "Go",
+   "Python",
+   "Node.js",
+   "PostgreSQL",
+   "Distributed Systems",
+   "Cloud"
+  ],
+  "featured": false,
+  "order": 4
+ },
+ {
+  "id": 5,
+  "name": "Agentic Engineering Workflows",
+  "description": "Production multi-agent workflows for software engineering — architecture analysis, implementation planning, documentation generation, incident investigation, and decision support.",
+  "longDescription": "Built production agentic workflows coordinating multiple AI agents across the software engineering lifecycle. Agents handle architecture analysis, implementation planning, automated documentation generation, incident investigation, and engineering decision support. Uses function calling, structured outputs, and retrieval-augmented generation.",
+  "url": null,
+  "githubUrl": null,
+  "tags": [
+   "Python",
+   "Claude",
+   "OpenAI",
+   "MCP",
+   "Agentic AI",
+   "RAG"
+  ],
+  "featured": false,
+  "order": 5
+ }
+]

@@ -1,0 +1,22 @@
+{{- $page := . -}}
+<header id="site-header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
+  <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="{{ "" | relURL }}" class="flex items-center gap-2 group">{{ partial "icon.html" (dict "name" "terminal" "class" "w-5 h-5 text-primary group-hover:text-primary/80 transition-colors") }}<span class="font-mono font-bold tracking-tight">wilkens.io</span></a>
+    <nav class="hidden md:flex items-center gap-8">
+      {{- range site.Menus.main }}
+      {{- $active := or (eq $page.RelPermalink .URL) (and (ne .PageRef "/") (hasPrefix $page.RelPermalink .URL)) }}
+      <a href="{{ .URL }}" class="text-sm font-mono transition-colors {{ if $active }}text-primary{{ else }}text-muted-foreground hover:text-foreground{{ end }}">{{ if $active }}&gt; {{ end }}{{ .Name }}</a>
+      {{- end }}
+    </nav>
+    <button id="nav-toggle" type="button" class="md:hidden text-muted-foreground hover:text-foreground" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation">
+      <span data-nav-icon="open">{{ partial "icon.html" (dict "name" "menu" "class" "w-6 h-6") }}</span>
+      <span data-nav-icon="close" hidden>{{ partial "icon.html" (dict "name" "x" "class" "w-6 h-6") }}</span>
+    </button>
+  </div>
+  <div id="mobile-navigation" class="md:hidden bg-background border-b border-border px-6 py-4 flex flex-col gap-4" hidden>
+    {{- range site.Menus.main }}
+    {{- $active := or (eq $page.RelPermalink .URL) (and (ne .PageRef "/") (hasPrefix $page.RelPermalink .URL)) }}
+    <a href="{{ .URL }}" class="text-sm font-mono py-2 {{ if $active }}text-primary{{ else }}text-muted-foreground{{ end }}">{{ if $active }}&gt; {{ end }}{{ .Name }}</a>
+    {{- end }}
+  </div>
+</header>

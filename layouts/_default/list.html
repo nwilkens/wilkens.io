@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+  <div class="space-y-4">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight flex items-center gap-4">{{ with .Params.icon }}{{ partial "icon.html" (dict "name" . "class" "w-10 h-10 text-primary") }}{{ end }}{{ .Title }}</h1>
+    <p class="text-xl text-muted-foreground">{{ .Params.lede }}</p>
+  </div>
+  <div class="space-y-8"><div class="flex flex-col gap-6">
+    {{- range $i, $p := .RegularPages.ByDate.Reverse }}
+    <a style="animation-delay:{{ mul $i 50 }}ms" href="{{ .RelPermalink }}" class="group block p-6 border border-border bg-card rounded-lg hover:bg-muted/30 hover:border-primary/50 transition-all duration-300 animate-in fade-in slide-in-from-bottom-4">
+      <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-3"><h2 class="text-2xl font-bold group-hover:text-primary transition-colors">{{ .Title }}</h2><div class="flex items-center gap-4 text-sm font-mono text-muted-foreground shrink-0"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 02, 2006" }}</time><span class="flex items-center gap-1">{{ partial "icon.html" (dict "name" "clock" "class" "w-3.5 h-3.5") }}{{ partial "reading-time.html" . }} min</span></div></div>
+      <p class="text-muted-foreground text-lg mb-6 leading-relaxed">{{ .Description }}</p>
+      <div class="flex flex-wrap gap-2">{{ range .Params.tags }}<span class="px-2 py-1 text-xs font-mono bg-background text-muted-foreground border border-border rounded">#{{ . }}</span>{{ end }}</div>
+    </a>
+    {{- end }}
+  </div></div>
+</div>
+{{ end }}

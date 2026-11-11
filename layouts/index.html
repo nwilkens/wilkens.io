@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ partial "home-hero.html" . }}
+<section class="space-y-8">
+  <div class="flex items-center justify-between"><h2 class="text-2xl font-bold tracking-tight">Featured Projects</h2><a href="{{ "projects/" | relURL }}" class="text-sm font-mono text-primary hover:text-primary/80 transition-colors flex items-center gap-2">View All {{ partial "icon.html" (dict "name" "arrow-right" "class" "w-4 h-4") }}</a></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {{- range where site.Data.projects "featured" true }}
+    {{- $card := "group p-6 border border-border bg-card rounded-lg hover:border-primary/50 transition-all flex flex-col h-full" }}
+    {{- if .url }}
+    <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ $card }}">{{ partial "project-card-body.html" . }}</a>
+    {{- else }}
+    <div class="{{ $card }}">{{ partial "project-card-body.html" . }}</div>
+    {{- end }}
+    {{- end }}
+  </div>
+</section>
+<section class="space-y-8">
+  <div class="flex items-center justify-between"><h2 class="text-2xl font-bold tracking-tight">Recent Writing</h2><a href="{{ "blog/" | relURL }}" class="text-sm font-mono text-primary hover:text-primary/80 transition-colors flex items-center gap-2">View All {{ partial "icon.html" (dict "name" "arrow-right" "class" "w-4 h-4") }}</a></div>
+  <div class="flex flex-col">
+    {{- range first 3 (where site.RegularPages "Section" "in" (slice "blog" "research")).ByDate.Reverse }}
+    <a href="{{ .RelPermalink }}" class="group py-6 border-b border-border last:border-0 hover:bg-card/50 transition-colors -mx-6 px-6">
+      <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-2"><h3 class="text-xl font-bold group-hover:text-primary transition-colors">{{ .Title }}</h3><div class="flex items-center gap-4 text-sm font-mono text-muted-foreground"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 02, 2006" }}</time><span>{{ partial "reading-time.html" . }} min read</span></div></div>
+      <p class="text-muted-foreground max-w-3xl">{{ .Description }}</p>
+    </a>
+    {{- end }}
+  </div>
+</section>
+</div>
+{{ end }}

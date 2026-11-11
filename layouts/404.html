@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="max-w-3xl mx-auto px-6 py-12 space-y-6">
+  <h1 class="text-4xl md:text-5xl font-bold tracking-tight">404</h1>
+  <p class="text-xl text-muted-foreground font-mono">No such file or directory.</p>
+  <a href="{{ "" | relURL }}" class="inline-flex items-center gap-2 text-sm text-primary font-mono">{{ partial "icon.html" (dict "name" "arrow-left" "class" "w-4 h-4") }} cd ~</a>
+</div>
+{{ end }}
