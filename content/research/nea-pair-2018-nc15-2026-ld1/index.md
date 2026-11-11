@@ -5,28 +5,65 @@ description: "A search of every known near-Earth asteroid orbit turns up two bod
 tags: ["Astronomy", "Near-Earth Asteroids", "Asteroid Pairs", "Open Data", "NASA"]
 ---
 
-Two near-Earth asteroids, 2018 NC15 and 2026 LD1, are on almost the same
-orbit. When they passed Earth in June 2026 they were about 500,000 km apart.
-As of November 2026 the gap is about 310,000 km, which is less than the
-distance from the Earth to the Moon. I could not find any publication that
-links them. This article describes how the pair turned up, the checks I ran,
-and the limits of what the data can show today.
+Two asteroids are circling the Sun together. They follow the same path, they
+are about as far apart as the Earth and the Moon, and one is about half the
+size of the other. The simplest explanation is that they used to be one rock.
+I could not find any record of anyone pointing this out before.
 
-This is a candidate, not a confirmed result. It has not been peer reviewed.
+<div class="explainer">
+<div class="explainer-row">
+<svg viewBox="0 0 200 130" role="img" aria-label="Diagram of the Sun, Earth's orbit, and a larger orbit with two dots close together on it.">
+<circle cx="92" cy="68" r="34" fill="none" stroke="#a6a6a6" stroke-width="1"/>
+<ellipse cx="108" cy="62" rx="56" ry="52" fill="none" stroke="#3987E5" stroke-width="1.5" opacity="0.8"/>
+<circle cx="92" cy="68" r="5" fill="#e8c547"/>
+<circle cx="126" cy="68" r="3.5" fill="#fafafa"/>
+<circle cx="150" cy="96" r="4" fill="#3987E5"/><circle cx="143" cy="102" r="3" fill="#EF5F2E"/>
+<text x="92" y="84" text-anchor="middle">Sun</text><text x="126" y="60" text-anchor="middle">Earth</text><text class="ink" x="160" y="118" text-anchor="middle">the pair</text>
+</svg>
+<div><h3>Two asteroids, one path</h3><p>2018 NC15 and 2026 LD1 follow the same orbit around the Sun, a little outside Earth's. One lap takes two years. They never come closer to Earth than about 18 million km.</p></div>
+</div>
+<div class="explainer-row">
+<svg viewBox="0 0 200 130" role="img" aria-label="Two scale bars. Earth to Moon is 384,000 km. The gap between the two asteroids is 310,000 km.">
+<line x1="15" y1="38" x2="185" y2="38" stroke="#a6a6a6" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="15" cy="38" r="7" fill="#fafafa"/><circle cx="185" cy="38" r="3" fill="#a6a6a6"/>
+<text x="15" y="20" text-anchor="start">Earth</text><text x="185" y="20" text-anchor="end">Moon</text><text class="ink" x="100" y="58" text-anchor="middle">384,000 km</text>
+<line x1="15" y1="96" x2="152" y2="96" stroke="#a6a6a6" stroke-width="1" stroke-dasharray="3 3"/>
+<circle cx="15" cy="96" r="5" fill="#3987E5"/><circle cx="152" cy="96" r="3.5" fill="#EF5F2E"/>
+<text x="15" y="80" text-anchor="start">2018 NC15</text><text x="152" y="80" text-anchor="end">2026 LD1</text><text class="ink" x="84" y="116" text-anchor="middle">310,000 km</text>
+</svg>
+<div><h3>Travelling side by side</h3><p>Asteroids that share an orbit by chance would be scattered around the Sun, hundreds of millions of km apart. These two are separated by less than the distance from the Earth to the Moon.</p></div>
+</div>
+<div class="explainer-row">
+<svg viewBox="0 0 200 130" role="img" aria-label="Two circles, the second about half the width of the first.">
+<circle cx="68" cy="58" r="40" fill="#3987E5" opacity="0.85"/><circle cx="152" cy="78" r="20" fill="#EF5F2E" opacity="0.9"/>
+<text class="ink" x="68" y="118" text-anchor="middle">2018 NC15</text><text class="ink" x="152" y="118" text-anchor="middle">2026 LD1</text>
+</svg>
+<div><h3>Probably once a single rock</h3><p>The larger one is roughly 100 to 250 metres across, about the size of a stadium. The smaller is about half that. Small asteroids can spin fast enough to throw off a piece, which then drifts away at walking pace.</p></div>
+</div>
+</div>
+
+Some care is needed with the numbers. The smaller asteroid was only discovered
+in June 2026 and was tracked for 27 days, so its path is not known well
+enough to say when the two separated. This is a candidate, not a confirmed
+result, and it has not been peer reviewed.
+
+The rest of this article is the evidence. It gets more technical as it goes.
 
 ## Summary
 
 - 2018 NC15 was discovered in 2018 and has been tracked for eight years.
-  2026 LD1 was discovered on 5 June 2026 and has a 27-day observation arc.
+  2026 LD1 was discovered on 5 June 2026 and has a 27-day observation arc,
+  meaning all measurements of it span 27 days.
 - Their orbits match more closely than any other pair of distinct objects in
   the near-Earth asteroid catalog.
 - The Catalina Sky Survey measured both objects in the same minute, on two
   nights, 1.25 degrees apart. They are two bodies, not one object entered
   twice.
-- 2026 LD1 is about 1.5 magnitudes fainter, so it is roughly half the
-  diameter of 2018 NC15.
-- The date they separated cannot be determined yet. The short arc of
-  2026 LD1 leaves its past position too uncertain.
+- 2026 LD1 is about 1.5 magnitudes fainter (about four times dimmer), so it
+  is roughly half the diameter of 2018 NC15.
+- When they passed Earth in June 2026 they were about 500,000 km apart. As of
+  November 2026 the gap is about 310,000 km.
+- The date they separated cannot be determined yet.
 
 ## The June 2026 pass
 
@@ -112,8 +149,9 @@ to be at the same point along the orbit, which these are.
 
 ## When did they separate?
 
-I drew 400 sample orbits ("clones") for 2026 LD1 from its published
-uncertainty and integrated each one backward 300 years with the Sun, the
+The orbit of 2026 LD1 is known only within a margin of error. To see what
+that margin allows, I drew 400 slightly different versions of its orbit
+("clones") from the published uncertainty and integrated each one backward 300 years with the Sun, the
 eight planets, and the Moon. The chart shows how far each clone was from
 2018 NC15 over that time.
 
