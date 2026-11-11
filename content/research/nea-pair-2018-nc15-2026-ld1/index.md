@@ -1,14 +1,14 @@
 ---
 title: "A Candidate Asteroid Pair: 2018 NC15 and 2026 LD1"
 date: "2026-11-11T12:00:00Z"
-description: "A search of every known near-Earth asteroid orbit turns up two bodies travelling within about one Earth-Moon distance of each other. I could not find the pair in the literature. Here is the evidence and what is still unverified."
+description: "A search of every known near-Earth asteroid orbit turns up two bodies travelling within about one Earth-Moon distance of each other. Rob Matson pointed out the pair on the Minor Planet Mailing List in June 2026. This is an independent look at the evidence and what is still unverified."
 tags: ["Astronomy", "Near-Earth Asteroids", "Asteroid Pairs", "Open Data", "NASA"]
 ---
 
 Two asteroids are circling the Sun together. They follow the same path, they
 are about as far apart as the Earth and the Moon, and one is about half the
 size of the other. The simplest explanation is that they used to be one rock.
-I could not find any record of anyone pointing this out before.
+Rob Matson pointed this out on the Minor Planet Mailing List on 10 June 2026, five days after the smaller one was discovered. I found the pair independently in November and only learned of his post afterward.
 
 <div class="explainer">
 <div class="explainer-row">
@@ -104,7 +104,7 @@ ten days or less, where the two entries may be one object catalogued twice.
 
 | Pair | D | Status |
 |---|---|---|
-| 2018 NC15 / 2026 LD1 | 0.0001 | Not found in the literature |
+| 2018 NC15 / 2026 LD1 | 0.0001 | Noted by Matson on the Minor Planet Mailing List, June 2026 |
 | 2012 QG8 / 2024 GE1 | 0.0003 | Reported by Liu et al., 2026 |
 | 2019 PR2 / 2019 QR6 | 0.0004 | Reported by Fatka et al., 2022 |
 | 2022 MY3 / 2022 OP8 | 0.0010 | Reported by Liu et al., 2026 |
@@ -113,10 +113,14 @@ ten days or less, where the two entries may be one object catalogued twice.
 | 2017 SN16 / 2018 RY7 | 0.0026 | Reported by Moskovitz et al., 2019 |
 | 2015 EE7 / 2015 FP124 | 0.0028 | Reported by Moskovitz et al., 2019 |
 
-Five of the eight are published pairs, which is a useful check that the
+Six of the eight were already known, which is a useful check that the
 search works. Liu et al. published the same kind of search in August 2026.
 2026 LD1 was discovered in June 2026, most likely after their catalog
-snapshot.
+snapshot. Rob Matson noted the 2018 NC15 / 2026 LD1 match on the Minor
+Planet Mailing List on 10 June 2026 and called it a "divorced binary".
+Francesco Manca replied that he had found the same similarity, and
+Alessandro Odasso posted a backward integration the next day. I have not
+found the pair in a journal paper.
 
 ## Evidence that this is a real pair
 
@@ -260,8 +264,10 @@ objects this close, so they need a proper joint orbit fit to confirm.
 - The clone integration leaves out the Yarkovsky thermal drift and general
   relativity. Both are much smaller than the orbit uncertainty over 500 years,
   but a proper age estimate needs them.
-- I searched for prior reports of this pair and found none. A preprint or a
-  Minor Planet Center note could exist that the search did not surface.
+- The first version of this article said I had found no prior report of the
+  pair. That was wrong. My search covered journals and preprints and missed
+  the Minor Planet Mailing List thread from June 2026. Other prior work
+  could exist that I have still not found.
 - The JPL database holds no size, spectrum, rotation period, or radar data
   for either object, and no infrared survey frames cover them. Matching
   composition would strengthen the case.
@@ -290,7 +296,16 @@ The analysis was done with Claude Code. The scripts are in the
   pairs and the other candidates, resolved four double entries, and added
   the search of unlinked detections.
 
+- 11 November 2026: removed the claim that the pair was unreported. Rob
+  Matson reported it on the Minor Planet Mailing List on 10 June 2026.
+
 ## References
+
+- Matson, R. (10 June 2026). 2026 LD1 and 2018 NC15: divorced binary.
+  [Minor Planet Mailing List](https://groups.io/g/mpml/topic/119735869),
+  with replies from F. Manca, A. Odasso, and others.
+- Odasso, A. (11 June 2026).
+  [2026 LD1 and 2018 NC15](https://odassoastro.blogspot.com/2026/06/2026-ld1-and-2018-nc15.html).
 
 - Liu, N., et al. (2026). Search for Near-Earth Asteroid
   Pair Candidates Based on Orbital Evolution Analysis. *The Astrophysical

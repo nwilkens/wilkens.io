@@ -1,15 +1,17 @@
 ---
 title: "Asking Questions Outside My Field"
 date: "2026-11-11T17:00:00Z"
-description: "I am not an astronomer. In one working session with Claude I went from a vague question about NASA's open data to a candidate asteroid pair nobody seems to have reported. What made that possible, and what kept it honest."
+description: "I am not an astronomer. In one working session with Claude I went from a vague question about NASA's open data to independently finding a candidate asteroid pair, and then to learning that someone had spotted it first. What made that possible, and what kept it honest."
 tags: ["AI", "Research", "Claude", "Open Data", "Agentic Engineering"]
 ---
 
 I build cloud infrastructure. I have never taken an astronomy course. This
 week I published
 [a candidate asteroid pair]({{< relref "research/nea-pair-2018-nc15-2026-ld1" >}}) that I
-could not find in the scientific literature. This post is about how that
-happened, because I think the how matters more than the asteroid.
+could not find in the scientific literature. A few hours later I learned
+that an amateur astronomer had pointed it out on a mailing list in June.
+This post is about how both of those things happened, because I think the
+how matters more than the asteroid.
 
 ## The question was vague
 
@@ -54,6 +56,18 @@ This is the part I would not skip.
   wrong. It was corrected the same hour and the correction is in the commit
   history.
 
+## What it missed
+
+The literature check covered journals and preprints. It did not cover the
+Minor Planet Mailing List, where Rob Matson had flagged the same two
+asteroids five days after the second one was discovered. I found his thread
+myself the same day the article went up, and the article now credits him.
+
+Finding the same thing independently is still a good sign that the method
+works. But the first version claimed more than it should have, and the
+lesson is specific: in a field you do not know, you also do not know where
+its people talk.
+
 ## What I brought
 
 Not expertise. I brought the question, a nudge to look at near-Earth objects
@@ -70,5 +84,6 @@ would: check the literature, check the raw data, publish the code, and say
 what is unverified.
 
 I do not know yet whether this pair will hold up. The next step is to send
-it to people who can tell me. Either way, I asked a question I had no
-business asking, and I got an answer I can check.
+the new parts of the analysis to the people already discussing it. Either
+way, I asked a question I had no business asking, and I got an answer I can
+check.
