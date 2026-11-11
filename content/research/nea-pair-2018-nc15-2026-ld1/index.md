@@ -140,7 +140,7 @@ of 2026 LD1 agrees with 2018 NC15 to within 0.4 standard deviations. The
 exception is the time of perihelion: 2026 LD1 passes 0.18 days later, a
 difference of 24 standard deviations. When the correlations between elements
 are included, the orbit shapes do differ by a small but significant amount
-(chi-squared of 261 on 5 degrees of freedom). That is what a slow separation
+(chi-squared of about 350 on 5 degrees of freedom). That is what a slow separation
 would produce.
 
 **Chance is not a plausible explanation.** The randomized catalogs produced no
@@ -151,23 +151,45 @@ to be at the same point along the orbit, which these are.
 
 The orbit of 2026 LD1 is known only within a margin of error. To see what
 that margin allows, I drew 400 slightly different versions of its orbit
-("clones") from the published uncertainty and integrated each one backward 300 years with the Sun, the
-eight planets, and the Moon. The chart shows how far each clone was from
-2018 NC15 over that time.
+("clones") from the published uncertainty and integrated each one backward
+500 years with the Sun, the eight planets, and the Moon. The chart shows how
+far each clone was from 2018 NC15 over that time.
 
 <figure>
-<img src="clone-separation.png" alt="Line chart on a log scale. The median separation between 2018 NC15 and 400 clones of 2026 LD1 rises from about 300,000 km today to about 30 million km 300 years ago. Thirteen clones pass within 10,000 km of 2018 NC15 at some point in that period.">
-<figcaption>Separation between 2018 NC15 and 400 clones of 2026 LD1 over the last 300 years. Most clones were farther away in the past. Thirteen pass within 10,000 km.</figcaption>
+<img src="clone-separation.png" alt="Line chart on a log scale. The median separation between 2018 NC15 and 400 clones of 2026 LD1 rises from about 300,000 km today to about 50 million km 500 years ago. Thirty-four clones pass within 10,000 km of 2018 NC15 at some point in that period, most of them around 400 years ago.">
+<figcaption>Separation between 2018 NC15 and 400 clones of 2026 LD1 over the last 500 years. Most clones were farther away in the past. Thirty-four pass within 10,000 km.</figcaption>
 </figure>
 
-- About 89% of the clones were farther from 2018 NC15 throughout the last
-  300 years than they are now. For those orbits the separation happened
+- About 83% of the clones were farther from 2018 NC15 throughout the last
+  500 years than they are now. For those orbits the separation happened
   earlier, probably thousands of years ago.
-- Seven clones (about 2%) pass within 3,000 km of 2018 NC15 between 63 and
-  273 years ago, at relative speeds of 0.07 to 0.34 m/s. That is the speed
-  range expected when a small asteroid sheds a fragment.
+- Ten clones (2.5%) pass within 3,000 km of 2018 NC15 between 74 and 465
+  years ago. Nine of them do so at under 1 m/s, and the slowest at 0.07 m/s.
+  That is the speed range expected when a small asteroid sheds a fragment.
 
 Both outcomes fit the data. The separation date is not constrained.
+
+## The same test on published pairs and other candidates
+
+To see what this test shows for pairs that are already accepted, I ran it
+unchanged on two pairs from Liu et al. and on the other close matches from my
+search.
+
+| Pair | Clones within 10,000 km | Of those, under 1 m/s | Slowest pass |
+|---|---|---|---|
+| 2018 NC15 / 2026 LD1 | 34 | 15 | 0.07 m/s |
+| 2012 QG8 / 2024 GE1 (published) | 37 | 5 | 0.38 m/s |
+| 2022 MY3 / 2022 OP8 (published) | 32 | 0 | 1.95 m/s |
+| (357414) 2003 XE / 2023 YD2 | 0 | 0 | 21 m/s |
+| 2024 SO3 / 2026 FO1 | 0 | 0 | none within 100,000 km |
+| 2005 TF / 2024 WS19 | 0 | 0 | 98 m/s |
+| (31346) 1998 PB1 / 2023 PV | 0 | 0 | none within 100,000 km |
+
+Each row is 400 clones over 500 years. 2018 NC15 / 2026 LD1 behaves like the
+two published pairs: a few percent of its possible orbits meet the larger
+body closely and slowly. The other four do not. Their orbits look alike, but
+in this test they never meet gently, so I no longer count them as candidates.
+A separation older than 500 years is not ruled out for any of them.
 
 ## A way to settle it
 
@@ -187,31 +209,61 @@ record, about two degrees from 2018 NC15.
 </figure>
 
 The uncertainty runs along the orbit track, so the search area is a line
-rather than a circle. One detection in archived Pan-STARRS or Catalina images
-would extend the arc of 2026 LD1 from 27 days to two years. That would
-shrink the uncertainty enough to compute a separation date.
+rather than a circle. One detection would extend the arc of 2026 LD1 from 27
+days to two years, which would shrink the uncertainty enough to compute a
+separation date.
 
-## Two weaker candidates
+I have made two attempts so far.
 
-- **(357414) 2003 XE and 2023 YD2.** Both were observed in the same weeks of
-  December 2023 and January 2024, about 37 degrees apart on the sky. The
-  nominal orbits pass within 630,000 km of each other around 1982, but
-  2023 YD2 has only a 14-day arc.
-- **2024 SO3 and 2026 FO1.** The orbits match, but 2026 FO1 has a 9-day arc
-  and the two were never observed in the same month.
+- **Unlinked detections: nothing found.** The Minor Planet Center keeps a file
+  of moving objects that surveys reported but nobody has matched to a known
+  asteroid. I compared 22,557 of those from May to August 2024 against
+  20,000 clones of 2026 LD1. None matched. The closest was 191 arcseconds
+  off and moving in the wrong direction. The same code reproduces the 2026
+  observations of 2026 LD1 to 0.4 arcseconds, so a real match would have
+  stood out.
+- **Survey images: they exist.** The Zwicky Transient Facility archive has 30
+  public exposures from May and June 2024 that cover both 2018 NC15 and the
+  predicted position of 2026 LD1. In the frames from 15 to 28 June the
+  companion is predicted at magnitude 20.4 to 20.6, close to the limit of a
+  single exposure. The Moon was full on 22 June 2024, which makes faint
+  objects harder to detect and may be why no survey reported it. Adding the
+  frames together along the predicted motion could still show it. I have not
+  done that yet.
 
-I have not run clone integrations for either.
+The next returns are worse. In June 2028 the companion peaks near magnitude
+22.2, and in 2030 near 23.3. The 2024 images are the best data that will
+exist for several years.
+
+## Catalog entries that are one object
+
+Four of the closest matches in the search turned out not to be pairs. In each
+case two catalog entries describe a single asteroid.
+
+| Entries | Finding | Evidence |
+|---|---|---|
+| 2026 SW11 and 2026 SA12 | Same object, entered twice | Each orbit predicts the other's observations to about 1 arcsecond |
+| 2026 VO and 2026 VR1 | Same object, entered twice | Same test, 0.4 to 0.8 arcseconds |
+| 2017 RB15 and 2026 RG39 | Very likely the same object on two returns, nine years apart | One of 6,000 clones of the 2026 orbit matches all six nights of 2017 observations to within 0.04 to 0.17 degrees |
+| 2010 VL65 and 2021 UA12 | Probably the same object, eleven years apart | 55 of 6,000 clones match all five nights of 2010 observations to within 0.5 degrees |
+
+The last two matter a little more than the first two. Each object has only
+been tracked for about ten days at a time. Linking the two visits would give
+each a multi-year orbit. My test for those two uses positions as seen from
+the centre of the Earth, which is accurate to a few tenths of a degree for
+objects this close, so they need a proper joint orbit fit to confirm.
 
 ## Limits
 
 - The whole case rests on a 27-day arc for 2026 LD1. More observations could
   change its orbit.
 - The clone integration leaves out the Yarkovsky thermal drift and general
-  relativity. Both are much smaller than the orbit uncertainty over 300 years,
+  relativity. Both are much smaller than the orbit uncertainty over 500 years,
   but a proper age estimate needs them.
 - I searched for prior reports of this pair and found none. A preprint or a
   Minor Planet Center note could exist that the search did not surface.
-- No spectra or rotation periods exist for either object. Matching
+- The JPL database holds no size, spectrum, rotation period, or radar data
+  for either object, and no infrared survey frames cover them. Matching
   composition would strengthen the case.
 
 ## Methods and data
@@ -219,13 +271,24 @@ I have not run clone integrations for either.
 - Orbital elements, uncertainties, and covariance: JPL Small-Body Database
   API, retrieved 11 November 2026.
 - Positions over time: JPL Horizons.
-- Observation records: Minor Planet Center observations API.
+- Observation records: Minor Planet Center observations API and isolated
+  tracklet file, retrieved 11 November 2026.
+- Archive image search: NASA/IPAC Infrared Science Archive moving-object
+  search, Zwicky Transient Facility catalog.
 - Orbit comparison: Southworth-Hawkins D criterion, with a k-d tree to find
   candidate neighbors.
 - Clone integration: REBOUND with the IAS15 integrator.
 
 The analysis was done with Claude Code. The scripts are in the
 [site repository](https://github.com/nwilkens/wilkens.io/tree/main/code/nea-pairs).
+
+## Changes
+
+- 11 November 2026: corrected the separation during the June 2026 pass from
+  320,000 km to about 500,000 km. Added the video and brightness chart.
+- 11 November 2026: extended the clone test to 500 years, ran it on published
+  pairs and the other candidates, resolved four double entries, and added
+  the search of unlinked detections.
 
 ## References
 
